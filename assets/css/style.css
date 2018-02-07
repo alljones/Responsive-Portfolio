@@ -265,6 +265,10 @@ MEDIA QUERIES: 768px or less
         margin: 0 auto 5%;
         clear: both;
     }
+
+    .row {
+        clear: both;
+    }
     .icon {
         width: 10%;
         padding-right: 50px;
@@ -275,6 +279,7 @@ MEDIA QUERIES: 768px or less
     }
     
   }
+  
 
   /* 
 =========================
@@ -300,7 +305,7 @@ MEDIA QUERIES: 640px or less
     }
 
     li a {
-        padding: 2px 80%;
+        padding: 2px 60px;
     }
     .wrapper {
         width: 90%;
