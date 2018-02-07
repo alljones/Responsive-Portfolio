@@ -1,0 +1,328 @@
+body {
+    width: 100%;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image:url("../../assets/images/dust_scratches.png");
+    background-repeat:repeat;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.nav-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height:  calc(100vh - 70px);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main {
+    width:58%;
+    float: left;
+}
+
+aside {
+    width:30%;
+    float: right;
+}
+
+.main,  aside {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2.5%;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    background-color: #666;
+    border-top: 5px solid #4aaaa5;
+    width: 100%;
+    height: 50px;
+}
+
+h1, h2 {
+    color: #4aaaa5;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Georgia', Times, Times New Roman, serif;.
+}
+
+h1 {
+    font-size: 2em;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+/*
+=========================
+CONTENT STYLES
+=========================
+*/
+
+.profile {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.icon {
+    width: 25%;
+    padding-right: 10px;
+}
+
+/* 
+=========================
+NAV
+========================= 
+*/
+#brand {
+    color: #fff;
+    text-align: center;
+    background-color: #4aaaa5;
+    width: 220px;
+    padding: 20px;
+    position: relative;
+    top: 24px;
+    left: 3%;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 2em;
+    border: none;
+}
+
+nav {
+    display: inline;
+    position: relative;
+   left: 70%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #4aaaa5;
+}
+
+
+/*
+=========================
+PORTFOLIO
+=========================
+*/
+
+.row {
+    position:relative;
+    width: 100%;
+}
+.project{
+    float: left;
+    width: 48%;
+    margin: 4px;
+}
+
+.work {
+    width: 100%;
+    opacity: .6;
+}
+
+.work:hover {
+    opacity: 1;
+}
+
+
+.title {
+    background-color: #4aaaa5;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    padding: 10px;
+}
+
+/*
+=========================
+FORM
+=========================
+*/
+
+input {
+    width: 95%;
+    padding: 1.5%;
+    font-size: 1.05em;
+    margin-bottom: 1.5%;
+}
+
+::placeholder, ::comment {
+    color: #ccc;
+}
+:-ms-input-placeholder {
+    color: #ccc;
+}
+::-ms-input-placeholder  {
+    color: #ccc;
+}
+
+textarea {
+    width: 95%;
+    height: 150px;
+    padding: 1.5%;
+}
+
+input[type="submit"] {
+    width: 30%;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+
+
+/* 
+=========================
+MEDIA QUERIES: 768px or less
+========================= 
+*/
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.05 em;
+       line-height: 1.05em;
+    }
+    .nav-wrapper {
+        width: 100%;
+    }
+    #brand {
+        color: #fff;
+        text-align: center;
+        background-color: #4aaaa5;
+        width: 100%;
+        padding: 5%;
+        position: static;
+    }
+    nav {
+        display: block;
+        position: static;
+       background-color: #FFF;
+       width: 100%;
+       padding: 5%;
+       margin: 0 auto;
+    }
+
+    li a {
+        padding: 2px 85px;
+        text-decoration: none;
+    }
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main {
+        float: none;
+        width: 100%;
+        width: 90%;
+        margin: 0 auto 5%;
+    }
+
+
+   aside {
+        float: none;
+        text-align: center;
+        width: 100%;
+        width: 90%;
+        margin: 0 auto 5%;
+        clear: both;
+    }
+    .icon {
+        width: 10%;
+        padding-right: 50px;
+    }
+
+    input {
+        margin-bottom: 5%;
+    }
+    
+  }
+
+  /* 
+=========================
+MEDIA QUERIES: 640px or less
+========================= 
+*/
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 1.05 em;
+       line-height: 1.05em;
+    }
+    .nav-wrapper {
+        width: 100%;
+    }
+    nav {
+        display: block;
+        position: static;
+       background-color: #FFF;
+       width: 100%;
+       padding: 5%;
+       margin: 0 auto;
+    }
+
+    li a {
+        padding: 2px 80%;
+    }
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main {
+        float: none;
+        width: 90%;
+        margin: 0 auto 5%;
+    }
+
+   aside {
+        float: none;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 5%;;
+    }
+    .icon {
+        width: 10%;
+        padding-right: 50px;
+    }
+    
+  }
+
+ 
